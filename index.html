@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -28,42 +28,42 @@
     <section class="foto">
       <ul class="foto-list">
         <li class="element">
-          <img src="./images/alec-wilson-kieWImLnBUo-unsplash.jpg" alt="" class="element__img">
+          <img src="./images/alec-wilson-kieWImLnBUo-unsplash.jpg" alt="Каньон" class="element__img">
           <div class="element__description">
             <h2 class="element__name">Каньон</h2>
             <button class="element__button-like"></button>
           </div>
         </li>
         <li class="element">
-          <img src="./images/christian-keybets-bSBWXvMfEPw-unsplash.jpg" alt="" class="element__img">
+          <img src="./images/christian-keybets-bSBWXvMfEPw-unsplash.jpg" alt="Темный лес" class="element__img">
           <div class="element__description">
             <h2 class="element__name">Темный лес</h2>
             <button class="element__button-like"></button>
           </div>
         </li>
         <li class="element">
-          <img src="./images/gabor-kozmon-a2zK5tC3u1c-unsplash.jpg" alt="" class="element__img">
+          <img src="./images/gabor-kozmon-a2zK5tC3u1c-unsplash.jpg" alt="Туманные горы" class="element__img">
           <div class="element__description">
             <h2 class="element__name">Туманные горы</h2>
             <button class="element__button-like"></button>
           </div>
         </li>
         <li class="element">
-          <img src="./images/marek-piwnicki-G-Al9hczvzI-unsplash.jpg" alt="" class="element__img">
+          <img src="./images/marek-piwnicki-G-Al9hczvzI-unsplash.jpg" alt="Солнечные горы" class="element__img">
           <div class="element__description">
             <h2 class="element__name">Солнечные горы</h2>
             <button class="element__button-like"></button>
           </div>
         </li>
         <li class="element">
-          <img src="./images/rohan-gupta-Dq_XiJm203A-unsplash.jpg" alt="" class="element__img">
+          <img src="./images/rohan-gupta-Dq_XiJm203A-unsplash.jpg" alt="закат" class="element__img">
           <div class="element__description">
             <h2 class="element__name">Закат</h2>
             <button class="element__button-like"></button>
           </div>
         </li>
         <li class="element">
-          <img src="./images/sean-d-TKn8uxc20vQ-unsplash.jpg" alt="" class="element__img">
+          <img src="./images/sean-d-TKn8uxc20vQ-unsplash.jpg" alt="Хвойный лес" class="element__img">
           <div class="element__description">
             <h2 class="element__name">Хвойный лес</h2>
             <button class="element__button-like"></button>
@@ -76,15 +76,15 @@
     <h2 class="footer__copyright">&copy; 2023 Mesto Russia</h2>
   </footer>
   <div class="popup">
-    <div class="popup__container">
+    <form class="popup__container">
       <button class="popup__button-close"></button>
       <h2 class="popup__title">Редактировать профиль</h2>
-      <input type="text" class="popup__input">
-      <input type="text" class="popup__input">
+      <input type="text" class="popup__input" name="name" id="input-name" value="Жак - Ив Кусто">
+      <input type="text" class="popup__input" name="about-me" id="input-aboutme" value="Исследователь океана">
       <button type="submit" class="popup__submit">Сохранить</button>
-    </div>
+    </form>
   </div>
-
+  <script src="./pages/index.js"></script>
 </body>
 
 </html>
