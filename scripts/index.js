@@ -7,17 +7,22 @@ let aboutMeInput = document.querySelector('#input-aboutme');
 let profileName = document.querySelector('.profile-info__name');
 let profileAboutMe = document.querySelector('.profile-info__about-me');
 
-editButton.addEventListener('click', function () { popup.classList.add('popup_active') });
-popupButtonClose.addEventListener('click', function () { popup.classList.remove('popup_active') });
-
+function closePopup() {
+  popup.classList.remove('popup_active');
+}
+function openPopup() {
+  popup.classList.add('popup_active');
+}
 function handleFormSubmit(evt) {
   evt.preventDefault();
 
   profileName.textContent = nameInput.value;
   profileAboutMe.textContent = aboutMeInput.value;
 
-  popup.classList.remove('popup_active');
+  closePopup();
 
 }
 
+editButton.addEventListener('click', openPopup);
+popupButtonClose.addEventListener('click', closePopup);
 formElement.addEventListener('submit', handleFormSubmit);
