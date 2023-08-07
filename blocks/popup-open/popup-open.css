@@ -1,0 +1,17 @@
+@keyframes showpopup {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.popup-open {
+  animation: showpopup 0.5s ease-in-out both;
+  visibility: visible;
+
+}

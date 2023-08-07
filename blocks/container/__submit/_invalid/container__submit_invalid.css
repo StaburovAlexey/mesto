@@ -1,0 +1,10 @@
+.container__submit_invalid {
+  background: #E5E5E5;
+  border: 1px solid  rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.container__submit_invalid:hover {
+  opacity: 1;
+  cursor: default;
+}

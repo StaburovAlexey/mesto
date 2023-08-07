@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Место</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <img src="./images/logo.svg" alt="логотип Место Россия" class="header__logo">
+  </header>
+  <main>
+    <section class="profile">
+      <div class="profile__info">
+        <img src="./images/custo.jpg" alt="жак-ив кусто" class="profile__avatar">
+        <div class="profile-info">
+          <h1 class="profile-info__name">Жак-Ив Кусто</h1>
+          <button class="profile-info__edit-button" type="button" name="edit-button"
+            aria-label="Редактировать профиль"></button>
+          <p class="profile-info__about-me">Исследователь океана</p>
+        </div>
+      </div>
+      <button class="profile__add-button" type="button" name="add-button" aria-label="Добавить фото"></button>
+    </section>
+    <div class="foto">
+      <ul class="foto__list">
+      </ul>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
+  </footer>
+  <div class="popup-edit-profile popup">
+    <div class="container">
+      <button class="button-close" aria-label="закрыть форму" name="button" type="button"></button>
+      <h2 class="container__title">Редактировать профиль</h2>
+      <form name="edit-profile" class="form-edit-profile popup__form" novalidate>
+        <input type="text" class="container__input" name="name" id="input-name" placeholder="Введите имя" required
+          minlength="2" maxlength="40">
+        <span id="input-name-error" class="input-error"></span>
+        <input type="text" class="container__input" name="about-me" id="input-aboutme" placeholder="О себе" required
+          minlength="2" maxlength="200">
+        <span id="input-aboutme-error" class="input-error"></span>
+        <button type="submit" class="container__submit" aria-label="сохранить" name="submit">Сохранить</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup-add-card popup">
+    <div class="container">
+      <button class="button-close" aria-label="закрыть форму" name="button" type="button"></button>
+      <h2 class="container__title">Новое место</h2>
+      <form name="edit-card" class="form-add-card popup__form" novalidate>
+        <input type="text" class="container__input" name="input-name-place" id="input-name-place"
+          placeholder="Название" required minlength="2" maxlength="30">
+        <span id="input-name-place-error" class="input-error"></span>
+        <input type="url" class="container__input" name="input-url" id="input-url"
+          placeholder="Ссылка на картинку" required>
+        <span id="input-url-error" class="input-error"></span>
+        <button type="submit" class="container__submit" aria-label="сохранить" name="submit-add-card">Сохранить</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup-img popup">
+    <div class="popup-img__container">
+      <img src="#" alt="" class="popup-img__img">
+      <button class="button-close" aria-label="закрыть форму" name="button" type="button"></button>
+      <p class="popup-img__text"></p>
+    </div>
+  </div>
+  <template id="template">
+    <li class="element">
+      <img src="#" alt="" class="element__img">
+      <div class="element__description">
+        <h2 class="element__name"></h2>
+        <button class="element__button-like" aria-label="Лайк" type="button"></button>
+      </div>
+      <button class="element__button-delete"></button>
+    </li>
+  </template>
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>

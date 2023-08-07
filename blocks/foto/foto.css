@@ -1,0 +1,12 @@
+.foto {
+  margin: 51px auto 67px;
+  max-width: 880px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .foto {
+    margin: 36px 0 48px;
+  }
+
+}

@@ -1,0 +1,28 @@
+.container__submit {
+  width: 100%;
+  min-height: 50px;
+  background-color: #000;
+  margin: 18px 0 0;
+  color: #fff;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.container__submit:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container__submit {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+}
